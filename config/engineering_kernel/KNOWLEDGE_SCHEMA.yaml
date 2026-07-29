@@ -1,0 +1,49 @@
+schema:
+  id: knowledge_unit
+  version: "0.1"
+
+required:
+
+  knowledge_id:
+    type: string
+
+  title:
+    type: string
+
+  summary:
+    type: string
+
+  domain:
+    type: string
+
+  status:
+    type: enum
+    values:
+      - draft
+      - reviewed
+      - canonical
+      - deprecated
+
+  source:
+    type: string
+
+  created:
+    type: date
+
+  updated:
+    type: date
+
+  tags:
+    type: list[string]
+
+  related_projects:
+    type: list[string]
+
+  related_patterns:
+    type: list[string]
+
+  related_knowledge:
+    type: list[string]
+
+  notes:
+    type: string

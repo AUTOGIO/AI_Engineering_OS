@@ -1,0 +1,55 @@
+schema:
+  id: context
+  version: "0.1"
+
+required:
+
+  context_id:
+    type: string
+
+  name:
+    type: string
+
+  purpose:
+    type: string
+
+  scope:
+    type: enum
+    values:
+      - session
+      - project
+      - agent
+      - workflow
+
+  status:
+    type: enum
+    values:
+      - active
+      - archived
+
+  created:
+    type: date
+
+  updated:
+    type: date
+
+  tags:
+    type: list[string]
+
+  related_projects:
+    type: list[string]
+
+  related_agents:
+    type: list[string]
+
+  related_workflows:
+    type: list[string]
+
+  assumptions:
+    type: list[string]
+
+  constraints:
+    type: list[string]
+
+  notes:
+    type: string

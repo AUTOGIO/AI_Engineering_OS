@@ -1,0 +1,91 @@
+schema:
+  id: project
+  version: "0.1"
+
+required:
+
+  project_id:
+    type: string
+
+  name:
+    type: string
+
+  description:
+    type: string
+
+  domain:
+    type: string
+
+  status:
+    type: enum
+    values:
+      - planning
+      - active
+      - paused
+      - archived
+
+  repository:
+    type: string
+
+  owner:
+    type: string
+
+  created:
+    type: date
+
+  updated:
+    type: date
+
+  tags:
+    type: list[string]
+
+  objectives:
+    type: list[string]
+
+  architecture:
+    type: list[string]
+
+  dependencies:
+    type: list[string]
+
+  agents:
+    type: list[string]
+
+  workflows:
+    type: list[string]
+
+  knowledge_units:
+    type: list[string]
+
+  patterns:
+    type: list[string]
+
+  prompts:
+    type: list[string]
+
+  reports:
+    type: list[string]
+
+  memories:
+    type: list[string]
+
+  external_sources:
+    type: list[string]
+
+  reasoning_methods:
+    type: list[string]
+
+  models:
+    type: list[string]
+
+  integrations:
+    type: list[string]
+
+  automation:
+    type: list[string]
+
+  metrics:
+    type: object
+
+  notes:
+    type: string

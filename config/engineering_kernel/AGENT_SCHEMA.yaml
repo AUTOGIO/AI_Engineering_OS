@@ -1,0 +1,52 @@
+schema:
+  id: agent
+  version: "0.1"
+
+required:
+
+  agent_id:
+    type: string
+
+  name:
+    type: string
+
+  role:
+    type: string
+
+  purpose:
+    type: string
+
+  status:
+    type: enum
+    values:
+      - design
+      - active
+      - paused
+      - retired
+
+  model:
+    type: string
+
+  created:
+    type: date
+
+  updated:
+    type: date
+
+  tags:
+    type: list[string]
+
+  tools:
+    type: list[string]
+
+  workflows:
+    type: list[string]
+
+  prompts:
+    type: list[string]
+
+  constraints:
+    type: list[string]
+
+  notes:
+    type: string

@@ -1,0 +1,52 @@
+schema:
+  id: workflow
+  version: "0.1"
+
+required:
+
+  workflow_id:
+    type: string
+
+  name:
+    type: string
+
+  description:
+    type: string
+
+  trigger:
+    type: string
+
+  status:
+    type: enum
+    values:
+      - draft
+      - active
+      - paused
+      - retired
+
+  created:
+    type: date
+
+  updated:
+    type: date
+
+  tags:
+    type: list[string]
+
+  steps:
+    type: list[string]
+
+  agents:
+    type: list[string]
+
+  inputs:
+    type: list[string]
+
+  outputs:
+    type: list[string]
+
+  related_projects:
+    type: list[string]
+
+  notes:
+    type: string

@@ -1,0 +1,38 @@
+# OS junk
+.DS_Store
+Icon?
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+dist/
+build/
+.npm/
+.vite/
+
+# Logs & temp
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.swp
+*~
+
+# Editors / IDE (local)
+.idea/
+.vscode/

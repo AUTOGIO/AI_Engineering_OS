@@ -1,0 +1,1 @@
+Follow AGENTS.md for repository layout and rules. Treat config/engineering_kernel schemas as contracts; do not invent empty schema files or new top-level folders without asking.
