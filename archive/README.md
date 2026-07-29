@@ -1,8 +1,8 @@
 # Archive
 
-Obsolete empty scaffold folders from the original multi-folder layout.
-Kept for reference; restore into the canonical folders in `AGENTS.md` only if needed.
+Obsolete scaffold folder names from the original multi-folder layout.
+Names kept here for reference only — empty dirs were removed so they do not imply live structure.
 
-Named folders (may be empty locally and are **not** git-tracked unless they gain real files): agents, architecture, automation, diagrams, examples, knowledge, knowledge_units, memory, patterns, projects, reasoning, reports, templates, traces, workflows.
+Historical names: agents, architecture, automation, diagrams, examples, knowledge, knowledge_units, memory, patterns, projects, reasoning, reports, templates, traces, workflows.
 
-Do not reintroduce these as live top-level domains without content.
+Restore into the canonical folders in `AGENTS.md` only when there is real content. Do not reintroduce these as live top-level domains without content.

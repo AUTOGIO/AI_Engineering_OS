@@ -19,7 +19,7 @@ Executed after the audit. Deferred items (validators, CI, automation, archive do
 | AUDIT-004 | Done | README and constitution agree on “knowledge layer today / vision tomorrow” |
 | AUDIT-005 | Done | Stubbed empty docs; `.cursorrules` points at `AGENTS.md`; kernel README filled |
 | AUDIT-006 | Done | Workspace `folders` set to `[{"path": "."}]` |
-| AUDIT-007 | Done | `.gitkeep` in `scripts/` and `docs/prompts/`; archive empties documented as untracked |
+| AUDIT-007 | Done | `.gitkeep` in `scripts/` and `docs/prompts/`; empty archive dirs removed; names kept in `archive/README.md` |
 | AUDIT-008 | Done (document only) | Kernel README records custom-DSL decision; validator deferred |
 | AUDIT-009 | Deferred | No CI until there is something to validate |
 | AUDIT-010 | No action | Baseline remains clean |
@@ -28,13 +28,13 @@ Executed after the audit. Deferred items (validators, CI, automation, archive do
 
 ## 1. Executive Summary
 
-This repository is a **personal engineering knowledge scaffold**, not a runnable application. Documented intent (README) matches the filesystem: Markdown constitution/manifests, a thin custom schema for projects, empty schema placeholders, and empty folders for future content.
+This repository is a **personal engineering knowledge scaffold**, not a runnable application. Documented intent (README) matches the filesystem: Markdown constitution/manifests and v0.1 kernel schema contracts under `config/engineering_kernel/`.
 
-It is **not operationally runnable** because there is nothing to build or start. It is also **not yet under durable version control**: branch `master` has **no commits**, **no remote**, and all content is **untracked**. That is the highest-priority risk for a repo whose constitution claims to be permanent engineering knowledge.
+**Post-remediation (2026-07-29):** branch `master` has an initial commit and a private GitHub remote (`AUTOGIO/AI_Engineering_OS`). Empty schema/docs placeholders were filled or stubbed; workspace `folders` points at `.`; reserved dirs `scripts/` and `docs/prompts/` are preserved via `.gitkeep`. Constitution Purpose now distinguishes **current state** (knowledge layer) from **target state** (vision OS).
 
-Content quality is uneven: the constitution and kernel manifest are substantive, but **five of six kernel schema files are empty**, several docs are zero-byte placeholders, and the VS Code workspace file lists no folders. Architecture ambition in `docs/ENGINEERING_OS_CONSTITUTION.md` exceeds what exists on disk (**Ambition–Capacity Mismatch**).
+**Security surface remains minimal** (no application code, no secrets found). Automation, agents, CI, and schema validators stay **deferred** until there is a real instance document and a chosen lint path.
 
-**Security surface is minimal** (no application code, no scripts, no secrets found). **Do not build automation, agents, or services yet** — establish git durability and fill or remove empty contracts first.
+See **Remediation Status** above and `docs/UPGRADE_SUMMARY.md` for the upgrade log.
 
 ---
 
